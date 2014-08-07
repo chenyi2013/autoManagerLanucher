@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.automanagerlanucher.MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/app_info_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_button"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/appInfo"
+            android:textColor="@color/menu_button" />
+
+        <RadioButton
+            android:id="@+id/setting_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/setting"
+            android:textColor="@color/menu_button" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_host" >
+    </RelativeLayout>
+
+</RelativeLayout>
